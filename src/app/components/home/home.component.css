@@ -1,0 +1,18 @@
+section{
+    min-height: 100vh;
+}
+
+.home h2 span {
+    font-weight: bold;
+}
+
+img{
+    width: 150px;
+}
+
+p{
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 2pc;
+}

@@ -1,0 +1,30 @@
+<section class="skills-section bg-dark">
+  <div class="container text-light text-center">
+    <h2>Skills</h2>
+    <div class="line-container">
+      <div class="line purple"></div>
+      <div class="line yellow"></div>
+    </div>
+
+    <div class="carousel">
+      <button class="carousel-btn prev" (click)="prevImage()">
+        <span>&#8249;</span>
+      </button>
+
+      <div class="image-container">
+        <img
+          [src]="images[currentImageIndex]"
+          alt="Skill Image"
+          class="carousel-image"
+        />
+      </div>
+
+      <button class="carousel-btn next" (click)="nextImage()">
+        <span>&#8250;</span>
+      </button>
+    </div>
+    
+    <button class="btn languages-btn next" (click)="nextImage()">Languages</button>
+    
+  </div>
+</section>

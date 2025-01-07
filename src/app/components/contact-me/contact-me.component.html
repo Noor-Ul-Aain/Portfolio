@@ -1,0 +1,55 @@
+<section class="contact-section bg-dark">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <!-- Line with Purple and Yellow -->
+    <div class="line-container">
+      <div class="line purple"></div>
+      <div class="line yellow"></div>
+    </div>
+
+    <div class="content">
+      <!-- Image on the left -->
+      <div>
+        <img src="images/noor.jpg" alt="Contact Me" />
+        <div class="social-links" style="margin-left: 14rem; margin-top: 1rem;">
+          <a *ngFor="let link of socialLinks" [href]="link.url" target="_blank" rel="noopener noreferrer">
+            <i [class]="link.icon"></i>
+          </a>
+        </div>
+        
+      </div>
+
+      <!-- Contact Form on the right -->
+      <form class="contact-form" #form="ngForm">
+        <div class="form-group">
+          <input type="text" name="fullName" #fName="ngModel" [(ngModel)]="contactForm.Name" placeholder="Name*" required minlength="3"/>
+          <div class="text-danger">
+            @if((fName.touched || fName.dirty) && fName.errors?.['required']){
+                <span>This is Required*</span>
+            }
+            @else if((fName.touched || fName.dirty) && fName.errors?.['minlength']){
+                <span>Minimum 3 Characteres Required</span>
+            }
+        </div>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" #emailId="ngModel" [(ngModel)]="contactForm.Email" placeholder="Email ID*" required />
+          <div class="text-danger">
+            @if((emailId.touched || emailId.dirty) && emailId.errors?.['required']){
+              <span>This is Required*</span>
+            }
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea name="message" #msg="ngModel" [(ngModel)]="contactForm.Message" placeholder="Message*" required></textarea>
+          <div class="text-danger">
+            @if((msg.touched || msg.dirty) && msg.errors?.['required']){
+              <span>This is Required*</span>
+            }
+          </div>
+        </div>
+        <button type="submit" class="send-btn">Send</button>
+      </form>
+    </div>
+  </div>
+</section>

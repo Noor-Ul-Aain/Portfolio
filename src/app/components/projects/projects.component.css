@@ -1,0 +1,50 @@
+section{
+  background-color: #343a40;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: end;
+  padding-top: 5rem;
+  margin-right: 4rem;
+  margin-bottom: 1rem;
+}
+
+.line-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.line {
+  height: 4px;
+  width: 45%;
+  border-radius: 2px;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.yellow {
+  background-color: rgba(255, 255, 0, 0.627);
+}
+
+p{
+  margin-top: 3rem;
+  margin-left: 15rem;
+  width: 60%;
+  text-align: justify;
+  font-size: larger;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+b{
+  font-weight: 500;
+}

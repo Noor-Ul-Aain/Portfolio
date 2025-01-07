@@ -1,0 +1,86 @@
+.skills-section {
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: start;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.line-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.line {
+  height: 4px;
+  width: 45%;
+  border-radius: 2px;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.yellow {
+  background-color: rgba(255, 255, 0, 0.627);
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.carousel-btn {
+  background-color: transparent;
+  border: none;
+  color: #6c5ce7;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.carousel-btn:hover {
+  color: #fff;
+}
+
+.image-container {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 4px 15px rgba(116, 113, 113, 0.81);
+  margin: 5rem 2.5rem;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.languages-btn {
+  background-color: #6c5ce7;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.languages-btn:hover {
+  background-color: #5a48c7;
+}
